@@ -1,0 +1,251 @@
+/* ===========================
+   RESPONSIVE — Full Mobile Fix
+   =========================== */
+
+/* ---- Large Desktop ---- */
+@media (max-width: 1280px) {
+  :root {
+    --section-pad-y: 80px;
+    --text-hero: clamp(2.8rem, 7vw, 5.5rem);
+    --text-display: clamp(2.2rem, 5vw, 4rem);
+  }
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---- Tablet ---- */
+@media (max-width: 1024px) {
+  :root {
+    --section-pad-y: 72px;
+    --section-pad-x: clamp(16px, 4vw, 48px);
+  }
+
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .split-section { grid-template-columns: 1fr; gap: var(--space-2xl); }
+  .split-section--reverse { direction: ltr; }
+
+  /* Home stats: 2 cols */
+  .home-stats__grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .home-stats__grid .stat-item:nth-child(2) { border-right: none !important; }
+  .home-stats__grid .stat-item:nth-child(1),
+  .home-stats__grid .stat-item:nth-child(2) {
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+  }
+
+  /* Services: 2 cols */
+  .home-services__grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .services-page__grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* before/after: stack */
+  .home-before-after__grid { grid-template-columns: 1fr !important; }
+
+  /* FAQ split: stack */
+  .home-faq__inner { grid-template-columns: 1fr !important; gap: var(--space-2xl) !important; }
+  .faq-layout { grid-template-columns: 1fr !important; gap: var(--space-2xl) !important; }
+  .faq-sidebar { position: static !important; }
+
+  /* Booking: stack */
+  .booking-layout { grid-template-columns: 1fr !important; gap: var(--space-2xl) !important; }
+  .booking-sidebar__inner { position: static !important; }
+
+  /* Contact: stack */
+  .contact-layout { grid-template-columns: 1fr !important; gap: var(--space-2xl) !important; }
+
+  /* Service areas: 1 col */
+  .service-areas__grid { grid-template-columns: 1fr 1fr !important; }
+
+  /* About process: 2 cols */
+  .about-process__steps { grid-template-columns: repeat(2, 1fr) !important; }
+  .about-process__steps::before { display: none !important; }
+  .about-mission__cards { grid-template-columns: 1fr !important; }
+}
+
+/* ---- Mobile Large ---- */
+@media (max-width: 768px) {
+  :root {
+    --section-pad-y: 60px;
+    --section-pad-x: 20px;
+    --text-hero: clamp(2rem, 9vw, 3.2rem);
+    --text-display: clamp(1.7rem, 7vw, 2.6rem);
+  }
+
+  /* Global grids → single column */
+  .grid--2,
+  .grid--3,
+  .grid--4 { grid-template-columns: 1fr !important; }
+
+  .section-header { margin-bottom: var(--space-2xl); }
+  .section-eyebrow { font-size: var(--text-xs); }
+
+  /* Buttons */
+  .btn--lg { padding: 16px 32px; font-size: var(--text-base); }
+  .hero-buttons { flex-direction: column; align-items: stretch; }
+  .hero-buttons .btn { justify-content: center; width: 100%; }
+
+  /* Hero */
+  .hero { min-height: 100svh; }
+  .hero__title { word-break: break-word; }
+  .hero__trust { gap: var(--space-sm); }
+  .hero__trust-badge { font-size: var(--text-xs); }
+  .hero__wave { height: 50px; }
+  .hero__scroll-indicator { display: none; }
+
+  /* Page hero */
+  .page-hero__title { font-size: clamp(1.7rem, 8vw, 2.8rem) !important; }
+  .page-hero__subtitle { font-size: var(--text-base); }
+  .page-hero--small { min-height: 38vh; padding: 120px 0 60px; }
+  .page-hero--medium { min-height: 52vh; padding: 140px 0 80px; }
+  .page-hero--large { min-height: 65vh; padding: 160px 0 100px; }
+  .page-hero__wave { height: 45px; }
+
+  /* Stats */
+  .home-stats__grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .stat-item { padding: var(--space-lg); }
+  .stat-number { font-size: 2.2rem; }
+
+  /* Services */
+  .home-services__grid { grid-template-columns: 1fr !important; }
+  .services-page__grid { grid-template-columns: 1fr !important; }
+  .service-card { aspect-ratio: 3/2; }
+
+  /* Value cards */
+  .value-card { padding: var(--space-xl) var(--space-lg); }
+
+  /* Before/After */
+  .home-before-after__grid { grid-template-columns: 1fr !important; }
+  .home-ba-card__images { grid-template-columns: 1fr 1fr; }
+
+  /* FAQ */
+  .faq-question { padding: var(--space-lg); font-size: var(--text-base); }
+  .faq-answer { padding: 0 var(--space-lg) var(--space-lg); }
+  .faq-item.open .faq-answer { padding-top: 0; }
+  .home-faq__inner { grid-template-columns: 1fr !important; gap: var(--space-xl) !important; }
+  .faq-layout { grid-template-columns: 1fr !important; gap: var(--space-xl) !important; }
+  .faq-sidebar { position: static !important; }
+
+  /* Gallery */
+  .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; gap: var(--space-sm); }
+
+  /* Service areas */
+  .service-areas__grid { grid-template-columns: 1fr !important; }
+  .service-areas-contact__actions { flex-direction: column; align-items: stretch; }
+  .service-areas-contact__actions .btn { justify-content: center; }
+
+  /* Booking */
+  .booking-layout { grid-template-columns: 1fr !important; gap: var(--space-xl) !important; }
+  .booking-sidebar__inner { position: static !important; }
+  .booking-form-wrapper__inner { padding: var(--space-xl); }
+  .booking-form__grid { grid-template-columns: 1fr !important; }
+  .booking-form__full { grid-column: auto !important; }
+
+  /* Contact */
+  .contact-layout { grid-template-columns: 1fr !important; gap: var(--space-xl) !important; }
+  .contact-form-wrapper { padding: var(--space-xl); }
+
+  /* About */
+  .about-process__steps { grid-template-columns: 1fr !important; }
+  .about-mission__cards { grid-template-columns: 1fr !important; }
+
+  /* Service detail */
+  .service-detail-price-strip__inner { flex-direction: column; text-align: center; align-items: center; }
+  .service-detail-price-strip .btn { width: 100%; justify-content: center; }
+  .service-detail__process-step { flex-direction: column; gap: var(--space-md); }
+
+  /* CTA section */
+  .cta-section { padding: var(--space-3xl) 0; }
+  .cta-section__actions { flex-direction: column; align-items: stretch; }
+  .cta-section__actions .btn { justify-content: center; }
+  .cta-section__float { display: none; }
+
+  /* Services price banner */
+  .services-price-banner__inner { flex-direction: column; text-align: center; }
+
+  /* Forms */
+  .form-group { margin-bottom: var(--space-lg); }
+  .form-input, .form-select, .form-textarea { font-size: 16px; /* prevent iOS zoom */ }
+
+  /* Area cards */
+  .area-card { aspect-ratio: 4/3; }
+  .home-areas__grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+/* ---- Mobile Small ---- */
+@media (max-width: 480px) {
+  :root {
+    --section-pad-y: 48px;
+    --section-pad-x: 16px;
+  }
+
+  /* Hero */
+  .hero__title { font-size: clamp(1.8rem, 9vw, 2.6rem); }
+  .hero__eyebrow { font-size: 0.65rem; padding: 5px 12px; }
+  .hero__price { flex-direction: column; gap: 4px; text-align: center; }
+  .hero__content { padding-top: 40px; }
+
+  /* Page hero */
+  .page-hero__title { font-size: clamp(1.5rem, 8vw, 2.2rem) !important; }
+  .page-hero__breadcrumbs { display: none; } /* hide on tiny screens — too cluttered */
+
+  /* Stats: 2 cols stay */
+  .home-stats__grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .stat-number { font-size: 1.9rem; }
+
+  /* Gallery filter: wrap smaller */
+  .gallery-filter { gap: var(--space-xs); }
+  .gallery-filter-btn { padding: 7px 12px; font-size: 0.7rem; }
+
+  /* Gallery grid: 1 col */
+  .gallery-grid { grid-template-columns: 1fr !important; }
+
+  /* Area grid: 1 col */
+  .home-areas__grid { grid-template-columns: 1fr !important; }
+
+  /* BA card footer: stack */
+  .home-ba-card__footer { flex-direction: column; align-items: flex-start; gap: var(--space-sm); }
+
+  /* Booking form btn */
+  .booking-form__btn { width: 100%; min-width: unset; }
+  .booking-form-wrapper__inner { padding: var(--space-lg); border-radius: var(--radius-lg); }
+
+  /* Contact form */
+  .contact-form__btn { width: 100%; justify-content: center; }
+
+  /* CTA section */
+  .cta-section__benefits { gap: var(--space-sm); }
+  .cta-section__benefit { font-size: var(--text-sm); }
+
+  /* Section eyebrow */
+  .section-eyebrow::before,
+  .section-eyebrow::after { display: none; }
+
+  /* Footer cards: already 1 col from 768 */
+  .footer__nav { gap: var(--space-xs) var(--space-md); }
+  .footer__nav-link { font-size: var(--text-xs); }
+
+  /* Price tag */
+  .price-tag__amount { font-size: var(--text-3xl); }
+
+  /* Service detail signs: 1 col */
+  .service-detail__signs { grid-template-columns: 1fr !important; }
+}
+
+/* ---- Very Small ---- */
+@media (max-width: 360px) {
+  :root {
+    --section-pad-x: 12px;
+  }
+  .hero__title { font-size: clamp(1.6rem, 8.5vw, 2.2rem); }
+  .btn { padding: 13px 20px; font-size: var(--text-sm); }
+  .btn--lg { padding: 14px 24px; }
+}
+
+/* ---- Safe viewport height (iOS) ---- */
+@supports (min-height: 100svh) {
+  .hero { min-height: 100svh; }
+}
+
+/* ---- Print ---- */
+@media print {
+  .header, .footer, .intro-wrapper { display: none; }
+  body { background: white; color: black; }
+}
