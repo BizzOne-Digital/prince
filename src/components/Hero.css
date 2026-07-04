@@ -77,7 +77,7 @@
   position: relative;
   z-index: 2;
   max-width: 820px;
-  padding-top: 120px; /* pushed down so eyebrow clears the header */
+  padding-top: 140px; /* enough clearance below fixed header on all screens */
 }
 
 /* Eyebrow */
