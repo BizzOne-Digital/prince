@@ -186,6 +186,8 @@
 }
 
 /* ---- RESPONSIVE ---- */
+/* All breakpoints handled globally in responsive.css */
+/* Keep only the mid-tablet tweak here */
 @media (max-width: 900px) {
   .cta-section__card {
     flex-direction: column;
@@ -193,42 +195,16 @@
     padding: 44px 40px;
     gap: var(--space-xl);
   }
-
   .cta-section__right {
     flex-direction: row;
     flex-wrap: wrap;
     min-width: unset;
     width: 100%;
   }
-
   .cta-section__btn-primary,
   .cta-section__btn-secondary {
     flex: 1;
-    min-width: 180px;
+    min-width: 160px;
     justify-content: center;
   }
-}
-
-@media (max-width: 600px) {
-  .cta-section__card {
-    padding: 36px 28px;
-    border-radius: 16px;
-  }
-
-  .cta-section__right {
-    flex-direction: column;
-  }
-
-  .cta-section__btn-primary,
-  .cta-section__btn-secondary {
-    width: 100%;
-  }
-
-  .cta-section__title {
-    font-size: clamp(1.4rem, 5vw, 2rem);
-  }
-}
-
-@media (max-width: 400px) {
-  .cta-section__card { padding: 28px 20px; }
 }
