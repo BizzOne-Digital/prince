@@ -19,6 +19,7 @@
 .section {
   padding: var(--section-pad-y) 0;
   position: relative;
+  overflow-x: hidden; /* prevent any child from causing horizontal scroll */
 }
 
 .section--dark {
