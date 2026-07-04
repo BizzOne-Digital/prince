@@ -80,7 +80,7 @@ export default function FAQ() {
       <PageHero
         title="Frequently Asked Questions"
         subtitle="Find answers to the most common questions about our pressure washing services."
-        bgImage="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920&q=80"
+        bgImage="/images/faq-hero.jpg"
         breadcrumbs={[{ name: 'FAQ' }]}
         badge="Questions & Answers"
         size="small"

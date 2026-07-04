@@ -5,7 +5,7 @@ export default function WalkwayCleaning() {
     <ServiceDetailPage
       title="Walkway Cleaning"
       subtitle="Safer, cleaner walkways that make great first impressions. Remove grime, weather buildup, and biological growth."
-      heroImage="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80"
+      heroImage="/images/walkway-hero.jpg"
       icon="🚶"
       included={[
         { title: 'Full Walkway Surface Cleaning', desc: 'Thorough cleaning of all walkway and pathway surfaces.' },

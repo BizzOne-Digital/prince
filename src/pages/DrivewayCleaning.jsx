@@ -5,7 +5,7 @@ export default function DrivewayCleaning() {
     <ServiceDetailPage
       title="Driveway Cleaning"
       subtitle="Remove stubborn stains, dirt, grime, and weather buildup. Restore your driveway's original look and improve curb appeal."
-      heroImage="https://images.unsplash.com/photo-1590332763512-de1ebc7929b1?w=1920&q=80"
+      heroImage="/images/driveway-hero.jpg"
       icon="🚗"
       included={[
         { title: 'Full Surface Cleaning', desc: 'Complete removal of dirt, moss, and general buildup from the driveway surface.' },

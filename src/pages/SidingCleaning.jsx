@@ -5,7 +5,7 @@ export default function SidingCleaning() {
     <ServiceDetailPage
       title="Siding Cleaning"
       subtitle="Gentle but effective soft washing to remove algae, dust, and exterior buildup while protecting your home's appearance."
-      heroImage="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=80"
+      heroImage="/images/siding-hero.jpg"
       icon="🏡"
       included={[
         { title: 'Soft Wash Technique', desc: 'Low-pressure soft wash that\'s safe for all siding types including vinyl, wood, and fiber cement.' },

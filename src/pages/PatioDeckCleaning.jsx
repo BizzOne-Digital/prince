@@ -5,7 +5,7 @@ export default function PatioDeckCleaning() {
     <ServiceDetailPage
       title="Patio & Deck Cleaning"
       subtitle="Make your outdoor spaces guest-ready. Remove dirt, moss, weather stains, and restore the look of your patio and deck."
-      heroImage="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1920&q=80"
+      heroImage="/images/patio-hero.jpg"
       icon="🪴"
       included={[
         { title: 'Full Patio Surface Cleaning', desc: 'Complete wash of all patio and deck surfaces.' },

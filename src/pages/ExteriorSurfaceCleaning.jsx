@@ -5,7 +5,7 @@ export default function ExteriorSurfaceCleaning() {
     <ServiceDetailPage
       title="Exterior Surface Cleaning"
       subtitle="Custom cleaning for all exterior surfaces around your home. We assess, plan, and deliver professional results every time."
-      heroImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+      heroImage="/images/exterior-hero.jpg"
       icon="✨"
       included={[
         { title: 'Custom Surface Assessment', desc: 'We evaluate the surface type and choose the right cleaning method.' },

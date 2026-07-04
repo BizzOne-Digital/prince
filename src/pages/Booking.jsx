@@ -18,7 +18,7 @@ export default function Booking() {
       <PageHero
         title="Book Your Service"
         subtitle="Choose a date and time that works best for you, and we'll handle the rest."
-        bgImage="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920&q=80"
+        bgImage="/images/booking-hero.jpg"
         breadcrumbs={[{ name: 'Booking' }]}
         badge="Easy Online Booking"
         size="small"

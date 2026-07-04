@@ -21,7 +21,7 @@ export default function About() {
       <PageHero
         title="About Pranvue Property Services"
         subtitle="Local. Reliable. Detail-focused. We're your neighbours, and we care about your home."
-        bgImage="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920&q=80"
+        bgImage="/images/about-hero.jpg"
         breadcrumbs={[{ name: 'About' }]}
         badge="Our Story"
         size="medium"
@@ -34,7 +34,7 @@ export default function About() {
             <AnimatedSection animation="reveal-left" className="about-intro__visual">
               <div className="about-intro__img-wrap">
                 <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80"
+                  src="/images/about-team.jpg"
                   alt="Pranvue Property Services at work"
                   loading="lazy"
                 />
@@ -190,7 +190,7 @@ export default function About() {
             <AnimatedSection animation="reveal-right">
               <div className="about-areas__visual">
                 <img
-                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=900&q=80"
+                  src="/images/areas-surrey.jpg"
                   alt="Surrey neighbourhood - service area"
                   loading="lazy"
                   style={{ borderRadius: 'var(--radius-xl)', width: '100%', aspectRatio: '4/3', objectFit: 'cover', boxShadow: 'var(--shadow-xl)' }}

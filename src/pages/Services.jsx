@@ -8,7 +8,7 @@ const services = [
   {
     title: 'House Washing',
     description: 'Complete exterior wash removing dirt, algae, mildew, and buildup. Starting at $389.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: '/images/house-washing-hero.jpg',
     path: '/services/house-washing',
     icon: '🏠',
     price: '$389',
@@ -17,7 +17,7 @@ const services = [
   {
     title: 'Driveway Cleaning',
     description: 'Remove oil stains, grime, and weather buildup. Restore curb appeal from the ground up.',
-    image: 'https://images.unsplash.com/photo-1590332763512-de1ebc7929b1?w=800&q=80',
+    image: '/images/driveway-hero.jpg',
     path: '/services/driveway-cleaning',
     icon: '🚗',
     detail: 'Powerful cleaning that removes deep-set stains and restores your driveway\'s original look.',
@@ -25,7 +25,7 @@ const services = [
   {
     title: 'Patio & Deck Cleaning',
     description: 'Make your outdoor spaces guest-ready. Remove dirt, moss, and weather stains from patios and decks.',
-    image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80',
+    image: '/images/patio-hero.jpg',
     path: '/services/patio-deck-cleaning',
     icon: '🪴',
     detail: 'Transform your outdoor living space into a clean, welcoming area for family and guests.',
@@ -33,7 +33,7 @@ const services = [
   {
     title: 'Siding Cleaning',
     description: 'Gentle soft washing to remove algae, dust, and buildup from all siding types.',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+    image: '/images/siding-hero.jpg',
     path: '/services/siding-cleaning',
     icon: '🏡',
     detail: 'Safe, low-pressure soft wash technique that cleans without damaging your siding.',
@@ -41,7 +41,7 @@ const services = [
   {
     title: 'Walkway Cleaning',
     description: 'Safer, cleaner walkways that make great first impressions. Remove grime and weather buildup.',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
+    image: '/images/walkway-hero.jpg',
     path: '/services/walkway-cleaning',
     icon: '🚶',
     detail: 'Clean, safe walkways that enhance your property\'s curb appeal and first impression.',
@@ -49,7 +49,7 @@ const services = [
   {
     title: 'Exterior Surface Cleaning',
     description: 'Custom cleaning for all exterior surfaces around your home. Professional results every time.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: '/images/exterior-hero.jpg',
     path: '/services/exterior-surface-cleaning',
     icon: '✨',
     detail: 'Comprehensive cleaning for any exterior surface — we\'ll assess and treat it the right way.',
@@ -62,7 +62,7 @@ export default function Services() {
       <PageHero
         title="Professional Property Services"
         subtitle="From house washing to exterior surface cleaning — we cover every inch of your home's exterior."
-        bgImage="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+        bgImage="/images/services-hero.jpg"
         breadcrumbs={[{ name: 'Services' }]}
         badge="What We Offer"
         size="medium"

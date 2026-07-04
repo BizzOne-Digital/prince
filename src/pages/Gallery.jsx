@@ -9,7 +9,7 @@ export default function Gallery() {
       <PageHero
         title="Our Work"
         subtitle="Browse our portfolio of pressure washing projects from across Surrey, White Rock, and Langley."
-        bgImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+        bgImage="/images/gallery-hero.jpg"
         breadcrumbs={[{ name: 'Gallery' }]}
         badge="Portfolio & Results"
         size="medium"

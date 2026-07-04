@@ -105,7 +105,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=40') center/cover;
+  background: url('/images/exterior-hero.jpg') center/cover;
   opacity: 0.06;
 }
 

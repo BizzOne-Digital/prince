@@ -5,18 +5,18 @@ import './GalleryGrid.css';
 const categories = ['All', 'House Washing', 'Driveways', 'Patios', 'Siding', 'Walkways', 'Before & After'];
 
 const galleryImages = [
-  { id: 1, category: 'House Washing', src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'House washing result' },
-  { id: 2, category: 'Driveways', src: 'https://images.unsplash.com/photo-1590332763512-de1ebc7929b1?w=800&q=80', alt: 'Clean driveway after pressure washing' },
-  { id: 3, category: 'Patios', src: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80', alt: 'Clean patio deck' },
-  { id: 4, category: 'Before & After', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Before and after pressure washing' },
-  { id: 5, category: 'Siding', src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80', alt: 'Clean home siding' },
-  { id: 6, category: 'House Washing', src: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80', alt: 'Exterior house washing' },
-  { id: 7, category: 'Walkways', src: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80', alt: 'Clean walkway' },
-  { id: 8, category: 'Driveways', src: 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&q=80', alt: 'Pressure washed driveway' },
-  { id: 9, category: 'Before & After', src: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80', alt: 'Property transformation' },
-  { id: 10, category: 'Patios', src: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?w=800&q=80', alt: 'Refreshed outdoor patio' },
-  { id: 11, category: 'Siding', src: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80', alt: 'Soft washed siding' },
-  { id: 12, category: 'Walkways', src: 'https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=800&q=80', alt: 'Cleaned pathway' },
+  { id: 1,  category: 'House Washing', src: '/images/gallery-1.png',  alt: 'House washing result' },
+  { id: 2,  category: 'Driveways',     src: '/images/gallery-2.png',  alt: 'Clean driveway after pressure washing' },
+  { id: 3,  category: 'Patios',        src: '/images/gallery-3.png',  alt: 'Clean patio deck' },
+  { id: 4,  category: 'Before & After',src: '/images/gallery-4.png',  alt: 'Before and after pressure washing' },
+  { id: 5,  category: 'Siding',        src: '/images/gallery-5.png',  alt: 'Clean home siding' },
+  { id: 6,  category: 'House Washing', src: '/images/gallery-6.png',  alt: 'Exterior house washing' },
+  { id: 7,  category: 'Walkways',      src: '/images/gallery-7.png',  alt: 'Clean walkway' },
+  { id: 8,  category: 'Driveways',     src: '/images/gallery-8.png',  alt: 'Pressure washed driveway' },
+  { id: 9,  category: 'Before & After',src: '/images/gallery-9.png',  alt: 'Property transformation' },
+  { id: 10, category: 'Patios',        src: '/images/gallery-10.png', alt: 'Refreshed outdoor patio' },
+  { id: 11, category: 'Siding',        src: '/images/gallery-11.png', alt: 'Soft washed siding' },
+  { id: 12, category: 'Walkways',      src: '/images/gallery-12.png', alt: 'Cleaned pathway' },
 ];
 
 export default function GalleryGrid({ limit }) {
@@ -87,7 +87,7 @@ export default function GalleryGrid({ limit }) {
             className="gallery-lightbox__content"
             onClick={(e) => e.stopPropagation()}
           >
-            <img src={lightbox.src.replace('w=800', 'w=1400')} alt={lightbox.alt} />
+            <img src={lightbox.src} alt={lightbox.alt} />
             <div className="gallery-lightbox__caption">
               <span className="gallery-lightbox__category">{lightbox.category}</span>
               <p>{lightbox.alt}</p>

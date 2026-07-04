@@ -5,7 +5,7 @@ export default function HouseWashing() {
     <ServiceDetailPage
       title="House Washing"
       subtitle="Remove dirt, algae, mildew, and exterior buildup while helping your home look fresh, clean, and well cared for."
-      heroImage="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+      heroImage="/images/house-washing-hero.jpg"
       icon="🏠"
       price="$389"
       included={[

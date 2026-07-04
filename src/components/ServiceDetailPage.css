@@ -157,7 +157,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=40') center/cover;
+  background: url('/images/house-washing-hero.jpg') center/cover;
   opacity: 0.06;
 }
 

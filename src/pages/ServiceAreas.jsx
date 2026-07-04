@@ -7,25 +7,25 @@ import './ServiceAreas.css';
 const areas = [
   {
     name: 'Surrey',
-    img: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=700&q=80',
+    img: '/images/areas-surrey.jpg',
     desc: 'Our primary service area. We work across all Surrey neighbourhoods including Cloverdale, Newton, Guildford, South Surrey, and more.',
     highlights: ['All Surrey Neighbourhoods', 'Residential Properties', 'Fast Response Times'],
   },
   {
     name: 'White Rock',
-    img: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80',
+    img: '/images/areas-white-rock.jpg',
     desc: 'Serving White Rock homeowners with professional pressure washing services. Coastal properties receive extra care and attention.',
     highlights: ['Coastal Properties', 'All Home Types', 'Experienced Team'],
   },
   {
     name: 'Langley',
-    img: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=700&q=80',
+    img: '/images/areas-langley.jpg',
     desc: 'From Langley City to Langley Township — we serve homeowners across the entire Langley area with reliable, professional service.',
     highlights: ['Langley City & Township', 'Residential Focus', 'Reliable Service'],
   },
   {
     name: 'Surrounding Areas',
-    img: 'https://images.unsplash.com/photo-1560184897-ae75f418493e?w=700&q=80',
+    img: '/images/areas-surrounding.jpg',
     desc: 'Not sure if we cover your area? Reach out and ask. We regularly service communities throughout the Lower Mainland.',
     highlights: ['Ask About Your Area', 'Lower Mainland Wide', 'Contact for Availability'],
   },
@@ -37,7 +37,7 @@ export default function ServiceAreas() {
       <PageHero
         title="Service Areas"
         subtitle="Proudly serving homeowners across Surrey, White Rock, Langley, and surrounding communities."
-        bgImage="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80"
+        bgImage="/images/areas-hero.jpg"
         breadcrumbs={[{ name: 'Service Areas' }]}
         badge="Where We Work"
         size="medium"

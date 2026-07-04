@@ -10,7 +10,7 @@ const services = [
   {
     title: 'House Washing',
     description: 'Complete exterior wash removing dirt, algae, mildew, and buildup.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: '/images/house-washing-hero.jpg',
     path: '/services/house-washing',
     icon: '🏠',
     price: '$389',
@@ -18,35 +18,35 @@ const services = [
   {
     title: 'Driveway Cleaning',
     description: 'Remove stains, oil, grime and restore your driveway\'s curb appeal.',
-    image: 'https://images.unsplash.com/photo-1590332763512-de1ebc7929b1?w=800&q=80',
+    image: '/images/driveway-hero.jpg',
     path: '/services/driveway-cleaning',
     icon: '🚗',
   },
   {
     title: 'Patio & Deck Cleaning',
     description: 'Make your outdoor spaces guest-ready with deep cleaning.',
-    image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80',
+    image: '/images/patio-hero.jpg',
     path: '/services/patio-deck-cleaning',
     icon: '🪴',
   },
   {
     title: 'Siding Cleaning',
     description: 'Gentle but effective soft washing for all siding types.',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+    image: '/images/siding-hero.jpg',
     path: '/services/siding-cleaning',
     icon: '🏡',
   },
   {
     title: 'Walkway Cleaning',
     description: 'Safer, cleaner walkways that make great first impressions.',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
+    image: '/images/walkway-hero.jpg',
     path: '/services/walkway-cleaning',
     icon: '🚶',
   },
   {
     title: 'Exterior Surface Cleaning',
     description: 'Custom cleaning for all exterior surfaces around your home.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: '/images/exterior-hero.jpg',
     path: '/services/exterior-surface-cleaning',
     icon: '✨',
   },
@@ -128,7 +128,7 @@ export default function Home() {
             <AnimatedSection animation="reveal-right" className="home-intro__visual">
               <div className="home-intro__image-wrapper">
                 <img
-                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&q=80"
+                  src="/images/about-team.jpg"
                   alt="Professional pressure washing team at work"
                   className="home-intro__img"
                   loading="lazy"
@@ -229,13 +229,13 @@ export default function Home() {
           <div className="home-before-after__grid">
             {[
               {
-                before: 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&q=80',
-                after: 'https://images.unsplash.com/photo-1590332763512-de1ebc7929b1?w=800&q=80',
+                before: '/images/driveway-detail.jpg',
+                after: '/images/driveway-hero.jpg',
                 label: 'Driveway Cleaning',
               },
               {
-                before: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80',
-                after: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80',
+                before: '/images/house-washing-detail.jpg',
+                after: '/images/house-washing-hero.jpg',
                 label: 'House Washing',
               },
             ].map((item, i) => (
@@ -277,10 +277,10 @@ export default function Home() {
 
           <div className="grid grid--4 home-areas__grid">
             {[
-              { name: 'Surrey', img: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80' },
-              { name: 'White Rock', img: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80' },
-              { name: 'Langley', img: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80' },
-              { name: 'Surrounding Areas', img: 'https://images.unsplash.com/photo-1560184897-ae75f418493e?w=600&q=80' },
+              { name: 'Surrey', img: '/images/areas-surrey.jpg' },
+              { name: 'White Rock', img: '/images/areas-white-rock.jpg' },
+              { name: 'Langley', img: '/images/areas-langley.jpg' },
+              { name: 'Surrounding Areas', img: '/images/areas-surrounding.jpg' },
             ].map((area, i) => (
               <AnimatedSection key={area.name} animation="reveal" delay={i * 0.1} className="area-card">
                 <img src={area.img} alt={`${area.name} - service area`} className="area-card__img" loading="lazy" />

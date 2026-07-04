@@ -25,7 +25,7 @@ export default function Contact() {
       <PageHero
         title="Get In Touch"
         subtitle="Have a question or need help choosing a service? We're here and happy to help."
-        bgImage="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920&q=80"
+        bgImage="/images/contact-hero.jpg"
         breadcrumbs={[{ name: 'Contact' }]}
         badge="Let's Connect"
         size="small"
