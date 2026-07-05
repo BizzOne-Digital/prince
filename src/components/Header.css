@@ -31,54 +31,33 @@
 .header__logo {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
   text-decoration: none;
   flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.header__logo-mark {
-  width: 44px;
+.header__logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  filter: brightness(1.05);
+}
+
+/* On hover — logo shrinks slightly, header "feels" smaller */
+.header__logo:hover .header__logo-img {
+  height: 40px;
+  opacity: 0.9;
+}
+
+/* When scrolled the logo is already smaller */
+.header--scrolled .header__logo-img {
   height: 44px;
-  background: var(--gradient-soft);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-purple);
-  transition: all var(--transition-base);
 }
 
-.header__logo:hover .header__logo-mark {
-  transform: rotate(15deg) scale(1.05);
-  box-shadow: var(--shadow-purple-lg);
-}
-
-.header__logo-icon {
-  font-size: 1.4rem;
-  color: var(--color-white);
-}
-
-.header__logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.header__logo-primary {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--color-white);
-  letter-spacing: 0.02em;
-}
-
-.header__logo-secondary {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.65);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.header--scrolled .header__logo:hover .header__logo-img {
+  height: 34px;
 }
 
 /* Nav */
@@ -444,4 +423,6 @@
 @media (max-width: 480px) {
   .header__logo-secondary { display: none; }
   .header__cta { display: none; }
+  .header__logo-img { height: 38px; }
+  .header--scrolled .header__logo-img { height: 32px; }
 }

@@ -66,13 +66,11 @@ export default function Header() {
         <div className="header__inner">
           {/* Logo */}
           <Link to="/" className="header__logo" aria-label="Pranvue Property Services - Home">
-            <div className="header__logo-mark">
-              <span className="header__logo-icon">✦</span>
-            </div>
-            <div className="header__logo-text">
-              <span className="header__logo-primary">Pranvue</span>
-              <span className="header__logo-secondary">Property Services</span>
-            </div>
+            <img
+              src="/images/logo.png"
+              alt="Pranvue Property Services"
+              className="header__logo-img"
+            />
           </Link>
 
           {/* Desktop Nav */}

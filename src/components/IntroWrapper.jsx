@@ -85,17 +85,14 @@ export default function IntroWrapper({ onComplete }) {
       <div className="intro-orb intro-orb--3" />
 
       <div className="intro-content">
-        {/* Logo mark */}
-        <div className="intro-logo-mark">
-          <div className="intro-logo-ring intro-logo-ring--outer" />
-          <div className="intro-logo-ring intro-logo-ring--inner" />
-          <span className="intro-logo-symbol">✦</span>
-        </div>
 
         {/* Text */}
         <div className="intro-text">
-          <h1 className="intro-brand">Pranvue</h1>
-          <p className="intro-sub">Property Services</p>
+          <img
+            src="/images/logo.png"
+            alt="Pranvue Property Services"
+            className="intro-logo-img"
+          />
           <div className="intro-divider" />
           <p className="intro-tagline">Let Your Property Smile For You ✨</p>
         </div>
