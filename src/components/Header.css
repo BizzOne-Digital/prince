@@ -37,7 +37,7 @@
 }
 
 .header__logo-img {
-  height: 52px;
+  height: 72px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -47,17 +47,17 @@
 
 /* On hover — logo shrinks slightly, header "feels" smaller */
 .header__logo:hover .header__logo-img {
-  height: 40px;
+  height: 56px;
   opacity: 0.9;
 }
 
 /* When scrolled the logo is already smaller */
 .header--scrolled .header__logo-img {
-  height: 44px;
+  height: 60px;
 }
 
 .header--scrolled .header__logo:hover .header__logo-img {
-  height: 34px;
+  height: 48px;
 }
 
 /* Nav */
