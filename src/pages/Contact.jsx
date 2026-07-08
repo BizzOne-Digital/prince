@@ -15,9 +15,20 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Submission failed');
+      setSubmitted(true);
+    } catch (err) {
+      alert(err.message || 'Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -52,11 +63,11 @@ export default function Contact() {
                     <div className="contact-detail-value">(672) 399-9637</div>
                   </div>
                 </a>
-                <a href="mailto:sheoranprince42@gmail.com" className="contact-detail-item">
+                <a href="mailto:Pranvueservices@gmail.com" className="contact-detail-item">
                   <div className="contact-detail-icon">✉️</div>
                   <div>
                     <div className="contact-detail-label">Email</div>
-                    <div className="contact-detail-value">sheoranprince42@gmail.com</div>
+                    <div className="contact-detail-value">Pranvueservices@gmail.com</div>
                   </div>
                 </a>
                 <a

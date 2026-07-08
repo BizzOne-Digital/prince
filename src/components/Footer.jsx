@@ -148,13 +148,13 @@ export default function Footer() {
                   </div>
                   <span>Surrey, White Rock &amp; Langley, BC</span>
                 </div>
-                <a href="mailto:sheoranprince42@gmail.com" className="footer__contact-row footer__contact-row--link">
+                <a href="mailto:Pranvueservices@gmail.com" className="footer__contact-row footer__contact-row--link">
                   <div className="footer__contact-icon-wrap">
                     <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
                       <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                     </svg>
                   </div>
-                  <span>sheoranprince42@gmail.com</span>
+                  <span>Pranvueservices@gmail.com</span>
                 </a>
                 <a href="tel:+16723999637" className="footer__contact-row footer__contact-row--link">
                   <div className="footer__contact-icon-wrap">
