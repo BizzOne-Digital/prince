@@ -16,16 +16,16 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:3001/api/contact', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(form),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Submission failed');
       setSubmitted(true);
     } catch (err) {
-      alert(err.message || 'Something went wrong. Please try again.');
+      alert('There was a problem sending your message. Please call us at (672) 399-9637 or email Pranvueservices@gmail.com');
     } finally {
       setLoading(false);
     }
